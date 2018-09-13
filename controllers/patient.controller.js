@@ -5,9 +5,9 @@ exports.test = function (req, res) {
     res.send('Greetings from the Test controller!');
 };
 
+
 // 2. Create new product --> POST localhost:1234/products/create
 // Write in body, with x-www-form tagged
-
 
 exports.patient_create = function (req, res) {
     let patient = new Patient(

@@ -25,5 +25,3 @@ router.put('/:id/update', patient_controller.patient_update);
 router.delete('/:id/delete', patient_controller.patient_delete);
 
 module.exports = router;
-
-console.log('2. route');
