@@ -1,10 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-console.log('2. route');
-
 // Require the controllers WHICH WE DID NOT CREATE YET!!
 const patient_controller = require('../controllers/patient.controller');
+
+/* GET patient page. */
+router.get('/', function(req, res, next) {
+  res.render('patient', { title: 'Patient!'});
+});
 
 //1. a simple test url to check that all of our files are communicating correctly.
 router.get('/test', patient_controller.test);
@@ -22,3 +25,5 @@ router.put('/:id/update', patient_controller.patient_update);
 router.delete('/:id/delete', patient_controller.patient_delete);
 
 module.exports = router;
+
+console.log('2. route');

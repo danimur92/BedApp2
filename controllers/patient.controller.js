@@ -1,4 +1,4 @@
-const Patient = require('../models/patient.model');
+const Patient = require('../server/models/patient.model');
 
 // 1. Simple version, without validation or sanitation
 exports.test = function (req, res) {
